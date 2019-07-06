@@ -1,0 +1,659 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  ----====* END CSS RESET *====---- */
+
+
+
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+html {
+
+  /*Width changed to 100% from 1280px, to remove horizontal scroll bars*/
+   width: 100%;
+   font-family: "Roboto","Helvetica","Arial", "sans-serif";
+   height: 100%;
+
+   /*font: 100%/1.5em; */
+
+
+}
+
+body {
+  /*font-family: "Roboto";*/
+}
+
+ /* Flexible Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+
+/*  FLUID GRIDS */
+.row {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+.container .columns{
+  float: left;
+  padding-right: 1em;
+  padding-left: 1em;
+  
+  /*background: /*tomato*/;*/
+
+}
+
+
+    .container .columns.one,    
+    .container .columns.two,    
+    .container .columns.three,    
+    .container .columns.four,     
+    .container .columns.five,     
+    .container .columns.six,    
+    .container .columns.seven,    
+    .container .columns.eight,    
+    .container .columns.nine,     
+    .container .columns.ten,    
+    .container .columns.eleven,     
+    .container .columns.twelve,   
+    .container .columns.thirteen,   
+    .container .columns.fourteen,   
+    .container .columns.fiftbeen,   
+    .container .columns.sixteen   { width: 100%;  }
+
+.container {
+  width: 100%;
+}
+
+.clearfix:after,
+.container:after {
+  content: '';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+.clearfix,
+.container {
+  zoom: 1;
+}
+
+
+
+/* HEADER SECTION START*/
+
+#logo {
+
+}
+
+    #logo a:link,#logo a:visited {
+        color: black;
+    }
+
+
+#logo img {
+  height: 80px;
+  width: auto;
+  float: left;
+}
+
+#logo h1 {
+  float: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+#main-menu {
+  float: right;
+
+  margin-top: 15px;
+
+  margin-right: 1em;
+}
+
+
+#logo {
+  float: left;
+}
+
+
+.menu-list {
+    display: none;
+
+}
+
+
+
+#hamburger {
+  float: right;
+}
+
+#hamburger-main-menu {
+  display: none;
+  text-align: center;
+}
+
+  #hamburger-main-menu li{
+      margin-top: 1em;
+  }
+
+  #hamburger-main-menu a{
+      text-decoration: none;
+  }
+
+    .hamburger-menu-list a:link, .hamburger-menu-list a:visited {
+        color: black;
+    }
+
+/* HEADER SECTION END */
+
+/* MAIN SCREEN START */
+
+#main-screen {
+
+  margin-top: 0.9em;
+  /*min-height: 100%;*/
+  /*width: 100%;*/
+ 
+
+/*  position: absolute;*/
+  height: 400px;
+
+
+/*  line-height: 500px;*/
+
+  
+/*  top: 100px;
+  left: 0;*/
+  
+  background: url('http://jasonnatividad.com/images/codingo-screen.jpeg') no-repeat center center;
+  background-size: cover;
+
+  
+/*   background: url('../images/bg-portfolio.jpg') no-repeat center center; */
+  
+  z-index: -10;
+
+
+}
+
+/*    #main-screen h1, h4 {
+      vertical-align: middle;
+    }*/
+
+
+
+
+#name {
+  font-size: 5em;
+
+}
+#web-dev {
+  color: white;
+  
+  
+  text-align: center;
+  /*width: 640px; can be in percentage also.*/
+  height: auto;
+  margin: 0 auto;
+  /*padding: 10px;*/
+  line-height: 5em;
+
+  /*position: relative;*/
+}
+
+/*    #web-dev h1 {
+      font-size: 3em;
+    }
+
+    #web-dev h2 {
+       font-size: 2em;
+    }*/
+
+
+
+  #web-dev h1 {
+    font-size: 2em;
+    margin-top: 10%;
+    
+
+  }
+  #web-dev h2 {
+    font-size: 1.5em;
+  }
+
+/*  ABOUT ME SECTION */
+
+#about-me {
+
+  background: #1F2C37;
+
+  /*width: 100%;*/
+  height: 1000px;
+  width: 100%;
+  color: white;
+
+
+}
+
+    #about-me h1 {
+        /*padding: 1em;*/
+        margin-top: 10%;
+        margin-right: 5em;
+        float: right;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 2em;
+        letter-spacing: 8px;
+       
+    }
+
+#who-am-i {
+  /*width: 40%;*/
+  float: right;
+  margin-top: 1em;
+  margin-right: 3em;
+  line-height: 1.8em;
+  font-size: 1.1em;
+  /*margin-top: -10em;*/
+
+}
+
+#photo {
+  width: 75%;
+  background: white;
+  height: 300px;
+  margin-top: 10%;
+  margin-left: 10%;
+  padding-top: 1em;
+  float: left;
+/*  position: relative;
+  top: 25%;
+  left: 10%;*/
+
+
+}
+
+#portfolio {
+  height: 1500px;
+  width: 100%;
+  background: white;
+  text-align: center;
+
+}
+
+
+
+  #portfolio h1 {
+    margin-top: 5%;
+    font-size: 4em;
+    letter-spacing: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+  }
+
+
+.portfolio-tile {
+/*    height: 40%;
+    width: 20%;*/
+/*    border-right-color: white;
+    border-right-width: 3em;*/
+    border-right: 0.5em solid white;
+    border-left: 0.5em solid white;
+    float: left;
+    /*margin-left: 3em;*/
+    color: white;
+    letter-spacing: 3px;
+    margin-top: 5%;
+}
+
+  .portfolio-tile:nth-of-type(1) {
+    background: #45ABE0;
+  }
+
+  .portfolio-tile:nth-of-type(2) {
+    background: #EB9039;
+  }
+
+  .portfolio-tile:nth-of-type(3) {
+    background: #F4CC31;
+  }
+
+  .portfolio-tile:nth-of-type(4) {
+    background: #EC6451;
+  }
+
+  .portfolio-tile:nth-of-type(5) {
+    background: #33B875;
+  }
+
+/*    .portfolio-tile img{
+      height: 50%;
+
+    }*/
+
+#contact {
+  height: 400px;
+  width: 100%;
+  background: #1F2C37;
+  text-align: center;
+  color: white;
+
+}
+
+  #contact i {
+    margin-top: 10%;
+    letter-spacing: 0.5em;
+  }
+  #contact p {
+    margin-top: 5em;
+  }
+
+  #contact a:link {
+    color: white;
+  }
+
+  #contact a:visited {
+    color: white;
+  }
+
+#contact-links {
+
+}
+
+#twitter-feed {
+/*  position: relative;
+  top: 1em;
+  right: -10em;*/
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 582px) {
+  
+  .menu-list {
+      text-decoration: none;
+      list-style: none;
+  }
+
+    .menu-list li {
+        display: inline;
+        padding: 10px;
+  }
+
+    .menu-list a {
+        text-decoration: none;
+    }
+
+
+    /*  Unsure if it is possible to select mutliple psuedo selectors - need to research */
+    .menu-list a:link, .menu-list a:visited {
+      color: black;
+    }
+
+
+  .menu-list {
+    /*visibility: visible;*/
+    display: inline;
+  }
+
+  #hamburger {
+    visibility: hidden;
+    float: none;
+  }
+
+  #hamburger-main-menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 885px) {
+
+    body {
+      font-size: 1em; /* 16 / 16 */
+      line-height: 1.5em;
+    }
+
+    #logo h1 {
+      font-size: 2em;
+    }
+
+
+
+
+    #about-me {
+      height: 500px;
+    }
+
+    #web-dev h1 {
+      font-size: 3em;
+    }
+
+    #web-dev h2 {
+      font-size: 2.5em;
+    }
+
+    #about-me h1{
+      font-size: 2em;
+      
+    }
+
+    #portfolio {
+      height: 900px;
+    }
+
+    #contact { 
+      height: 400px;
+    }
+
+
+
+
+
+
+
+
+    .container .columns.one     { width: 6.25%; }
+    .container .columns.two     { width: 12.5%; }
+    .container .columns.three   { width: 18.75%;  }
+    .container .columns.four    { width: 25%;   }
+    .container .columns.five    { width: 31.25%;  }
+    .container .columns.six     { width: 37.5%; }
+    .container .columns.seven   { width: 43.75%;  }
+    .container .columns.eight   { width: 50%;   }
+    .container .columns.nine    { width: 56.25%;  }
+    .container .columns.ten     { width: 62.5%; }
+    .container .columns.eleven    { width: 68.75%;  }
+    .container .columns.twelve    { width: 75%;   }
+    .container .columns.thirteen  { width: 81.25%;  }
+    .container .columns.fourteen  { width: 87.5%; }
+    .container .columns.fifteen  { width: 93.75%;  }
+    .container .columns.sixteen   { width: 100%;  }
+
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .columns.banner {
+     /* padding-bottom: 30%;*/
+      /*background:url('../img/photodune-tea-bag.jpg') no-repeat center center;*/
+      background-size: cover;
+    }
+
+
+/*    .columns.banner {
+      padding-bottom: 0;
+      background: none;
+    }*/
+
+/*    .container .featured-section .four {
+      width: 50%;
+    }
+
+    .container .featured-section .four:nth-child(3) {
+      clear: both;
+    }*/
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    #web-dev h1 {
+      font-size: 5em;
+    }
+
+    #web-dev h2 {
+      font-size: 3em;
+    }
+
+    #about-me h1{
+      font-size: 3em;
+      
+    }
+}
+
+/*@media only screen and (min-width: 720px) {
+    
+
+    .container .featured-section .four {
+      width: 25%;
+    }
+
+    .container .featured-section .four:nth-child(3) {
+      clear: none;
+
+    } 
+}
+
+
+@media only screen and (max-width: 1025px) {
+    
+
+    #about-me h1 {
+      font-size: 2em;
+
+    }
+
+    .container .four {
+      width: 25%;
+    }
+
+    .container .four:nth-child(3) {
+      clear: none;
+
+    } 
+
+    .featured-section .four {
+      margin: 2em 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 883px) {
+
+    .container .eight {
+      width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 762px) {
+    
+    #about-me h1 {
+      font-size: 1.5em;
+      
+    }
+
+    #about-me p {
+      font-size: 1em;
+    }
+}
+*/
+
+/*@media only screen and (max-width: 479px) {
+
+    #about-me {
+      height: 800px;
+    }
+
+    #portfolio {
+      height: 1200px;
+    }
+
+    #contact {
+      height: 500px;
+    }
+}
+*/
